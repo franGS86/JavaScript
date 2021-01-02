@@ -47,13 +47,13 @@ for (animal of animales) {
 }
 
 // label
-document.write("<br>"+"FOR OF y FOR OF en conjunto" + "<br>"+"<br>");
+document.write("<br>"+"FOR IN y FOR OF en conjunto" + "<br>"+"<br>");
 
 let array1 = ["ana", "juan", "pedro", "fran"];
 let array2 = ["rosa", "dylan", "yuki", array1];
 
 for (let array in array2){
-// cuando este en el indice 3 que esta el otro array se recorre
+// cuando este en el indice 3 que esta el otro array este se recorre
 if(array == 3 ){
 
     for (let array of array1){
@@ -69,6 +69,28 @@ if(array == 3 ){
         
 }
 
+// si queremos usar un continue o un break para uno o los for utilizamos un label
+document.write("<br>"+"FOR IN y FOR OF utilizando un cotinue o un break con LABEL" + "<br>"+"<br>");
+
+// label
+frolabel:
+
+for (let array in array2){
+    // cuando este en el indice 3 que esta el otro array este se recorre
+    if(array == 3 ){
+    
+        for (let array of array1){
+    continue frolabel;
+        document.write(array+"<br>");
+    
+        }
+    
+        }else{
+    
+        document.write(array2[array]+"<br>");
+        }
+            
+    }
 
 
 
