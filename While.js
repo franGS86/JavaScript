@@ -26,4 +26,7 @@ if(num3 == 10){
     break;
 
 }
+
 }
+document.write("FIN");
+
