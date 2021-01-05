@@ -6,8 +6,8 @@ alert(frutas);
 
 // sixtaxis para eliminar un elemeto en especifico
 
-let borrar = prompt("ingrece la fruta que desea eliminar")
-let aux = frutas.findIndex(futas => futas === borrar);
+let borrar = prompt("ingrece la fruta que desea eliminar");
+let aux = frutas.findIndex((futas) => futas === borrar);
 alert("indice de la fruta " + aux);
 frutas.splice(aux, 1);
 alert(frutas);
@@ -16,39 +16,37 @@ alert(frutas);
 
 let borrar1 = prompt("ingrece la fruta que desea eliminar");
 let reemplazar = prompt("ingrece la fruta que desea reemplazar");
-let aux1 = frutas.findIndex(futas => futas === borrar1);
+let aux1 = frutas.findIndex((futas) => futas === borrar1);
 alert("indice de la fruta " + aux);
 frutas.splice(aux, 1, reemplazar);
 alert(frutas);
 
-
-// document.write(frutas[0]);
-// document.write(frutas[1]);
-// document.write(frutas[2]);
-// document.write(frutas[3]);
-// frutas.push("fresas");
+document.write(frutas[0]);
+document.write(frutas[1]);
+document.write(frutas[2]);
+document.write(frutas[3]);
+frutas.push("fresas");
 
 //ARRAY POR NOMBRE
-let pc ={
+let pc = {
+	nombre: "fran",
+	procesador: "i9",
+	ram: "16 ram",
+	almacenamiento: "1tb",
+};
 
-    nombre: "fran", procesador: "i9",
-    ram: "16 ram", almacenamiento: "1tb"
-    
-     }
+//  let opcion = prompt("Cual informacion requiere de la pc");
 
-    //  let opcion = prompt("Cual informacion requiere de la pc");
+alert(pc[opcion]);
 
-     alert(pc[opcion]);
-    
-    document.write(pc["procesador"]);
+document.write(pc["procesador"]);
 
-    // otra forma es de utilizar el contenido de un array por nombre
+// otra forma es de utilizar el contenido de un array por nombre
 
-    let nombre = pc["nombre"];
-    let ram = pc["ram"];
-    let procesador = pc["procesador"];
-    let almacenamiento = pc["almacenamiento"];
-
+let nombre = pc["nombre"];
+let ram = pc["ram"];
+let procesador = pc["procesador"];
+let almacenamiento = pc["almacenamiento"];
 
 frase = `El nombre de mi pc es: ${nombre} <br>
 la memoria ram es de ${ram} <br>
