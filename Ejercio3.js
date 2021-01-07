@@ -51,7 +51,8 @@ class celularAltaGama extends Celulares {
 		alert("Iniciar reconocimiento facial");
 	}
 	infoAltaGama() {
-		rerturn this.mostrarinfo() + `Resolucion de camara : ${resolucionCamaraExtra}`;
+		rerturn =
+			this.mostrarinfo() + `Resolucion de camara : ${resolucionCamaraExtra}`;
 	}
 }
 
