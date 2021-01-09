@@ -51,8 +51,7 @@ class celularAltaGama extends Celulares {
 		alert("Iniciar reconocimiento facial");
 	}
 	infoAltaGama() {
-		rerturn =
-			this.mostrarinfo() + `Resolucion de camara : ${resolucionCamaraExtra}`;
+		rerturn  (this.mostrarinfo + `Resolucion de camara : ${resolucionCamaraExtra}`);
 	}
 }
 
@@ -79,8 +78,8 @@ class celularAltaGama extends Celulares {
 //     ${celular3.mostrarinfo()}`
 // );
 
-celular1 = new celularAltaGama("rojo", "130", "5.2", "4k", "3GB", "Full hd");
-celular2 = new celularAltaGama("negro", "142", "6", "4k", "4GB", "hd");
+const celular1 = new celularAltaGama("rojo", "130", "5.2", "4k", "3GB", "Full hd");
+const celular2 = new celularAltaGama("negro", "142", "6", "4k", "4GB", "hd");
 
 document.write(
 	`${celular1.celularAltaGama}<br>
