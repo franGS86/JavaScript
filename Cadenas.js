@@ -89,3 +89,58 @@ resultado = cadena19.split(" ");
 
 document.write(resultado + `<br>`);
 
+let cadena20 = "ABCDFG";
+
+// substring sirve para seleccionar un numero de caracteres el primer para metro es donde incia y el otro donde finaliza
+resultado = cadena20.substring(0, 6);
+
+document.write(resultado + `<br>`);
+
+let cadena21 = "ABCDFG";
+
+// substring sirve para seleccionar un numero de caracteres el primer para metro es donde incia y el otro donde finaliza
+resultado = cadena21.toLowerCase(cadena21);
+
+document.write(resultado + `<br>`);
+
+let cadena22 = "abcdfg";
+
+// substring sirve para seleccionar un numero de caracteres el primer para metro es donde incia y el otro donde finaliza
+resultado = cadena22.toUpperCase(cadena22);
+
+document.write(resultado + `<br>`);
+
+let cadena23 = 50;
+
+// toString sirve para convertir a cadena un dato
+resultado = cadena23.toString();
+
+document.write(2 * resultado + `<br>`);
+
+let cadena24 = "    ABC                 DF    G";
+
+// substring sirve para seleccionar un numero de caracteres el primer para metro es donde incia y el otro donde finaliza
+resultado = cadena24.trim(cadena24);
+
+document.write(resultado + `<br>`);
+
+let cadena25 = "    ABCDFG";
+
+// trimStart sirve para eliminar los espacios vacios de el inicio
+resultado = cadena25.trimStart(cadena25);
+
+document.write(resultado + `<br>`);
+
+let cadena26 = "ABCDFG        ";
+
+// trimEnd sirve para eliminar los espacios vacios de el final
+resultado = cadena26.trimEnd(cadena26);
+
+document.write(resultado + `<br>`);
+
+let cadena27 = "ABCDFG";
+
+// trimEnd sirve para eliminar los espacios vacios de el final
+resultado = cadena27.length;
+
+document.write(resultado + `<br>`);
