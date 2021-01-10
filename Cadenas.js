@@ -33,7 +33,59 @@ document.write(resultado + `<br>`);
 let cadena9 = "cadena de prueba";
 let cadena10 = "prueba";
 
-// includes sirve para saber si una cadena puede encontrarse dentro de otra, devuelve un booleano
+// indexOf sirve para saber la posicion que esta en la otra cadena devuelve un int
 resultado = cadena9.indexOf(cadena10);
 
 document.write(resultado + `<br>`);
+
+let cadena11 = "cadena de prueba";
+let cadena12 = "prueba";
+
+// indexOf sirve para saber la posicion que esta en la otra cadena devuelve un int
+resultado = cadena9.indexOf(cadena10);
+// indicando una posion en la cadena nos devuelve la letra que esta en esa posicion
+document.write(cadena11[10] + `<br>`);
+
+let cadena13 = "cadena de prueba lastindexof";
+let cadena14 = "lastindexof";
+
+// lasIndexOf sirve para saber la posicion que esta la ultimas palabra
+resultado = cadena13.lastIndexOf(cadena14);
+
+document.write(resultado + `<br>`);
+
+let cadena15 = "abc";
+
+// padstart sirve para poder agregar texto al inicio, un numero de veces nesesario para que la cadena tenga 6
+resultado = cadena15.padStart(6, "f");
+
+document.write(resultado + `<br>`);
+
+let cadena16 = "abc";
+
+// padEnd sirve para poder agregar texto al final, un numero de veces
+resultado = cadena16.padEnd(6, "f");
+
+document.write(resultado + `<br>`);
+
+let cadena17 = "abc";
+
+// repeat sirve para repetir la caneda la cantidad de veces que se le indique
+resultado = cadena17.repeat(6);
+
+document.write(resultado + `<br>`);
+
+let cadena18 = "abc";
+
+// replace sirve para poder reemplazar texto indicando el texto a buscar para luego ser reeplazado
+resultado = cadena18.replace("abc", "fran");
+
+document.write(resultado + `<br>`);
+
+let cadena19 = "hola como estas";
+
+// replace sirve para poder reemplazar texto indicando el texto a buscar para luego ser reeplazado
+resultado = cadena19.split(" ");
+
+document.write(resultado + `<br>`);
+
