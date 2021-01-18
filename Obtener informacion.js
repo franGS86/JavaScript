@@ -8,13 +8,32 @@ const getInfromacion = (materia) => {
 	if (materias[materia] !== undefined) {
 		return [materias[materia], materia];
 	} else {
-		return false;
+		return materias;
 	}
 };
+
+const cantidadDeClases = (alumno) => {
+	let informacion = getInfromacion();
+	let clasesPresente = [];
+	let catidadTotal = 0;
+	for (info in informacion) {
+		if (informacion[info].includes(alumno)) {
+			catidadTotal++;
+			clasesPresente.push(" " + info);
+		}
+	}
+	return `<b style='color:red'>${alumno}</b> esta en ${catidadTotal} clases<br>
+	Esta cursando las clases: <b>${clasesPresente}</b><br><br>`;
+};
+
 menu();
 
 function menu() {
-	let op = parseInt(prompt("1: Buscar por materia, 2: Mostrar todo"));
+	let op = parseInt(
+		prompt(
+			"1: Buscar por materia, 2: Mostrar todo, 3: Buscar catidad de materias por alumno, 4: Mostar la catidad de materias de todos los alumnos"
+		)
+	);
 
 	if (op == 1) {
 		let informacion = getInfromacion(
@@ -42,7 +61,7 @@ function menu() {
 				);
 			} else {
 				alert(`ERROR`);
-                menu();
+				menu();
 			}
 		} else {
 			document.write(`Materia no encontrada ` + `<br>`);
@@ -51,18 +70,32 @@ function menu() {
 		array = ["fisica", "programacion", "logica", "quimica"];
 
 		for (let i = 0; i < array.length; i++) {
+			var arrayAlumnos = [];
 			let materiaux = array[i];
 			let profesor = getInfromacion(array[i])[0][0];
 			alumnos = getInfromacion(array[i])[0];
 			alumnos.shift();
+			arrayAlumnos.push(alumnos);
 
 			document.write(
 				`El profesor de <b style = "color:green">${materiaux} </b> es <b style="color: red"> ${profesor}</b><br>
         Los alumnos son: <b style = "color:blue">${alumnos}</b><br><br>`
 			);
 		}
-		document.write(getInfromacion[1] + `<br>`);
-		// document.write(jd + `<br>`);
+
+		for (let i = 0; i < arrayAlumnos.length; i++) {
+			document.write(arrayAlumnos[i] + `<br>`);
+		}
+	} else if (op == 3) {
+		let aux2 = prompt("selecione el alumno");
+
+		document.write(cantidadDeClases(aux2) + `<br>`);
+	} else if (op == 4) {
+		array2 = ["pedro", "maria", "juan", "pepito", "cofla"];
+
+		for (let i = 0; i < array2.length; i++) {
+			document.write(cantidadDeClases(array2[i]) + `<br>`);
+		}
 	} else {
 		alert("opcion incorrecta");
 	}
